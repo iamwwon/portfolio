@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/07766614ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+  </head>
+  <body>
+    <!-- 헤더 영역 -->
+    <header class="header">
+      <div class="inner">
+        <a href="#" id="logo" class="logo">
+          <i class="fa-solid fa-hippo"></i>
+          <span>YANG YE WON</span>
+        </a>
+        <nav class="menu">
+          <a href="#about">ABOUT</a>
+          <a href="#projects">PROJECTS</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 메인 영역 -->
+    <main>
+      <!-- 소개 섹션 -->
+      <section id="about" class="section">
+        <div class="profile">
+          <img src="images/IMG_0058.jpg" alt="Profile Image" />
+          <div class="info">
+            <h1>YANG.YEWON</h1>
+            <p>Creative designer</p>
+            <div class="social-links">
+              <a href="mailto:ygmong@gmail.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7.175q.125 0 .263-.038t.262-.112L19.6 8.25q.2-.125.3-.312t.1-.413q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037"
+                  />
+                </svg>
+              </a>
+              <a href="https://instagram.com/iamwwon" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M8 5.67C6.71 5.67 5.67 6.72 5.67 8S6.72 10.33 8 10.33S10.33 9.28 10.33 8S9.28 5.67 8 5.67M15 8c0-.97 0-1.92-.05-2.89c-.05-1.12-.31-2.12-1.13-2.93c-.82-.82-1.81-1.08-2.93-1.13C9.92 1 8.97 1 8 1s-1.92 0-2.89.05c-1.12.05-2.12.31-2.93 1.13C1.36 3 1.1 3.99 1.05 5.11C1 6.08 1 7.03 1 8s0 1.92.05 2.89c.05 1.12.31 2.12 1.13 2.93c.82.82 1.81 1.08 2.93 1.13C6.08 15 7.03 15 8 15s1.92 0 2.89-.05c1.12-.05 2.12-.31 2.93-1.13c.82-.82 1.08-1.81 1.13-2.93c.06-.96.05-1.92.05-2.89m-7 3.59c-1.99 0-3.59-1.6-3.59-3.59S6.01 4.41 8 4.41s3.59 1.6 3.59 3.59s-1.6 3.59-3.59 3.59m3.74-6.49c-.46 0-.84-.37-.84-.84s.37-.84.84-.84s.84.37.84.84a.8.8 0 0 1-.24.59a.8.8 0 0 1-.59.24Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://admitted-raver-910.notion.site/19d979f26dcc80b28a24e9dc263ab58b?pvs=4"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24 "
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M5.716 5.506c.622.506.855.467 2.023.39l11.013-.662c.233 0 .039-.233-.039-.272L16.884 3.64c-.35-.272-.817-.583-1.712-.506l-10.663.778c-.39.039-.467.233-.312.39zm.66 2.567V19.66c0 .622.312.855 1.012.817l12.103-.7c.7-.039.779-.467.779-.973V7.294c0-.504-.194-.777-.623-.738l-12.648.739c-.467.039-.622.272-.622.778m11.948.621c.078.35 0 .7-.35.74l-.584.116v8.555c-.506.272-.973.427-1.362.427c-.623 0-.779-.194-1.245-.777l-3.815-5.988v5.793l1.207.273s0 .7-.973.7l-2.685.155c-.078-.156 0-.544.272-.622l.7-.194v-7.66l-.972-.079c-.078-.35.116-.855.662-.894l2.88-.194l3.97 6.066V9.745l-1.013-.116c-.078-.429.233-.74.623-.778zM3.614 2.862l11.09-.816c1.363-.117 1.713-.039 2.57.583l3.54 2.488c.584.428.779.545.779 1.011v13.649c0 .855-.312 1.36-1.401 1.438l-12.88.778c-.819.04-1.208-.077-1.636-.622l-2.607-3.383c-.467-.623-.662-1.089-.662-1.634V4.223c0-.7.312-1.283 1.206-1.36"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+              <a href="https://github.com/iamwwon" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 상세 정보 -->
+        <div class="info-section">
+          <div class="education">
+            <h2>Education</h2>
+            <p>2012 영남대학교 생활제품디자인학과 졸업</p>
+            <p>2008 경명여자고등학교 졸업</p>
+          </div>
+
+          <div class="experience">
+            <h2>Experience</h2>
+            <p>2020 - 2024 이전호 세무회계사무소</p>
+            <p>2017 - 2020 네일바이원 운영</p>
+          </div>
+
+          <div class="certificate">
+            <h2>Certificate</h2>
+            <p>2020 전산세무 2급 취득</p>
+            <p>2020 전산회계 1급, 2급 취득</p>
+            <p>2017 미용사(네일) 취득</p>
+            <p>2015 미용사(피부) 취득</p>
+            <p>2012 운전면허 취득</p>
+          </div>
+
+          <div class="skills">
+            <h2>Skills</h2>
+            <div class="skill-icons">
+              <span>Ps</span> <span>Ai</span> <span>Ae</span> <span>Pr</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 프로젝트 섹션 -->
+      <section id="projects" class="section">
+        <h2>PROJECTS</h2>
+        <div class="project-grid">
+          <div class="project-item large">
+            <img src="https://picsum.photos/500/400" alt="Project 1" />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eros lorem rutrum nisi
+                  ut augue justo lectus.
+                </p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item small">
+            <img src="https://picsum.photos/250/200" alt="Project 2" />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eros lorem rutrum nisi
+                  ut augue justo lectus.
+                </p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item small">
+            <img src="https://picsum.photos/250/200" alt="Project 3" />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eros lorem rutrum nisi
+                  ut augue justo lectus.
+                </p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item large">
+            <img src="https://picsum.photos/500/400" alt="Project 4" />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eros lorem rutrum nisi
+                  ut augue justo lectus.
+                </p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item small">
+            <img src="https://picsum.photos/250/200" alt="Project 5" />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eros lorem rutrum nisi
+                  ut augue justo lectus.
+                </p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item small">
+            <img src="https://picsum.photos/250/200" alt="Project 6" />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eros lorem rutrum nisi
+                  ut augue justo lectus.
+                </p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 숨겨진 이미지들 -->
+          <div class="project-item medium hidden">
+            <img src="https://picsum.photos/500/200" alt="Project 6" />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eros lorem rutrum nisi
+                  ut augue justo lectus.
+                </p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item small hidden">
+            <img src="https://picsum.photos/250/200" alt="Project 7" />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eros lorem rutrum nisi
+                  ut augue justo lectus.
+                </p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item small hidden">
+            <img src="https://picsum.photos/250/200" alt="Project 8" />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Eros lorem rutrum nisi
+                  ut augue justo lectus.
+                </p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item small hidden hidden">
+            <img
+              src="https://picsum.photos/250/200?random=100"
+              alt="추가 이미지"
+            />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>More Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item small hidden">
+            <img
+              src="https://picsum.photos/250/200?random=100"
+              alt="추가 이미지"
+            />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>More Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item large hidden">
+            <img
+              src="https://picsum.photos/500/400?random=100"
+              alt="추가 이미지"
+            />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>More Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item medium hidden">
+            <img
+              src="https://picsum.photos/500/200?random=100"
+              alt="추가 이미지"
+            />
+            <div class="overlay">
+              <div class="text-box">
+                <h3>More Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <span>2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="more-btn load-more">more +</button>
+      </section>
+    </main>
+
+    <!-- 푸터 영역 -->
+    <footer>
+      <p>Copyright 2025. YEWON. all rights reserved</p>
+      <div class="footer-links">
+        <a href="mailto:ygmong@gmail.com">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7.175q.125 0 .263-.038t.262-.112L19.6 8.25q.2-.125.3-.312t.1-.413q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037"
+            />
+          </svg>
+        </a>
+        <a href="https://instagram.com/iamwwon" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              d="M8 5.67C6.71 5.67 5.67 6.72 5.67 8S6.72 10.33 8 10.33S10.33 9.28 10.33 8S9.28 5.67 8 5.67M15 8c0-.97 0-1.92-.05-2.89c-.05-1.12-.31-2.12-1.13-2.93c-.82-.82-1.81-1.08-2.93-1.13C9.92 1 8.97 1 8 1s-1.92 0-2.89.05c-1.12.05-2.12.31-2.93 1.13C1.36 3 1.1 3.99 1.05 5.11C1 6.08 1 7.03 1 8s0 1.92.05 2.89c.05 1.12.31 2.12 1.13 2.93c.82.82 1.81 1.08 2.93 1.13C6.08 15 7.03 15 8 15s1.92 0 2.89-.05c1.12-.05 2.12-.31 2.93-1.13c.82-.82 1.08-1.81 1.13-2.93c.06-.96.05-1.92.05-2.89m-7 3.59c-1.99 0-3.59-1.6-3.59-3.59S6.01 4.41 8 4.41s3.59 1.6 3.59 3.59s-1.6 3.59-3.59 3.59m3.74-6.49c-.46 0-.84-.37-.84-.84s.37-.84.84-.84s.84.37.84.84a.8.8 0 0 1-.24.59a.8.8 0 0 1-.59.24Z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.notion.so/19d979f26dcc80b28a24e9dc263ab58b?pvs=4"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24 "
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M5.716 5.506c.622.506.855.467 2.023.39l11.013-.662c.233 0 .039-.233-.039-.272L16.884 3.64c-.35-.272-.817-.583-1.712-.506l-10.663.778c-.39.039-.467.233-.312.39zm.66 2.567V19.66c0 .622.312.855 1.012.817l12.103-.7c.7-.039.779-.467.779-.973V7.294c0-.504-.194-.777-.623-.738l-12.648.739c-.467.039-.622.272-.622.778m11.948.621c.078.35 0 .7-.35.74l-.584.116v8.555c-.506.272-.973.427-1.362.427c-.623 0-.779-.194-1.245-.777l-3.815-5.988v5.793l1.207.273s0 .7-.973.7l-2.685.155c-.078-.156 0-.544.272-.622l.7-.194v-7.66l-.972-.079c-.078-.35.116-.855.662-.894l2.88-.194l3.97 6.066V9.745l-1.013-.116c-.078-.429.233-.74.623-.778zM3.614 2.862l11.09-.816c1.363-.117 1.713-.039 2.57.583l3.54 2.488c.584.428.779.545.779 1.011v13.649c0 .855-.312 1.36-1.401 1.438l-12.88.778c-.819.04-1.208-.077-1.636-.622l-2.607-3.383c-.467-.623-.662-1.089-.662-1.634V4.223c0-.7.312-1.283 1.206-1.36"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+        <a href="https://github.com/iamwwon" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <!-- 프로젝트 모달 -->
+    <div class="modal">
+      <div class="modal-content">
+        <a class="close"><i class="fa-solid fa-xmark"></i></a>
+        <img src="" alt="Project Image" />
+        <h1>Project Title</h1>
+        <p>Project Description</p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
