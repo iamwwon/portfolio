@@ -508,4 +508,15 @@ footer p {
   .header .inner {
     padding: 0px 20px;
   }
+
+  footer {
+    padding: 0px 5px;
+  }
+
+  footer p {
+    font-size: 0.5rem;
+  }
+  .footer-links a {
+    margin: 0 5px;
+  }
 }
