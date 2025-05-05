@@ -99,16 +99,67 @@ window.addEventListener("load", () => {
     item.addEventListener("click", (e) => {
       const title = item.querySelector("h3").innerText;
       const description = item.querySelector("p").innerText;
-      const imgSrc = item.querySelector("img").getAttribute("src");
+      const mediaBox = modal.querySelector(".modal-media");
+
+      // 기존 내용 초기화
+      mediaBox.innerHTML = "";
+
+      // 썸네일 클릭 시 → data-video-id로 iframe 생성
+      const videoThumb = item.querySelector(".video-thumbnail");
+      if (videoThumb) {
+        const videoId = videoThumb.getAttribute("data-video-id");
+        const iframe = document.createElement("iframe");
+        iframe.setAttribute("width", "600");
+        iframe.setAttribute("height", "400");
+        iframe.setAttribute(
+          "src",
+          `https://www.youtube.com/embed/${videoId}?mute=1&autoplay=1&rel=0`
+        );
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allow", "autoplay; encrypted-media");
+        iframe.setAttribute("allowfullscreen", "");
+        mediaBox.appendChild(iframe);
+      } else {
+        // 이미지 프로젝트일 경우 기존 방식
+        const img = item.querySelector("img");
+        if (img) {
+          const imgElem = document.createElement("img");
+          imgElem.src = img.getAttribute("src");
+          imgElem.alt = img.getAttribute("alt") || "Project Image";
+          mediaBox.appendChild(imgElem);
+        }
+      }
 
       modal.querySelector("h1").innerText = title;
       modal.querySelector("p").innerText = description;
-      modal.querySelector("img").setAttribute("src", imgSrc);
       modal.classList.add("active");
     });
   });
 
+  // 닫기 버튼 누르면 모달 닫고 영상도 제거
   closeBtn.addEventListener("click", () => {
     modal.classList.remove("active");
+    modal.querySelector(".modal-media").innerHTML = ""; // iframe 제거
+  });
+
+  // ✅ YouTube 영상 썸네일 클릭 시 iframe으로 전환
+  const thumbnails = document.querySelectorAll(".video-thumbnail");
+  thumbnails.forEach((thumb) => {
+    thumb.addEventListener("click", () => {
+      const videoId = thumb.getAttribute("data-video-id");
+      const iframe = document.createElement("iframe");
+
+      iframe.setAttribute("width", "100%");
+      iframe.setAttribute("height", "100%");
+      iframe.setAttribute(
+        "src",
+        `https://www.youtube.com/embed/${videoId}?autoplay=1`
+      );
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute("allow", "autoplay; encrypted-media");
+      iframe.setAttribute("allowfullscreen", "");
+
+      thumb.replaceWith(iframe);
+    });
   });
 });
