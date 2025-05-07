@@ -348,7 +348,7 @@ footer p {
 
 .modal-content {
   position: relative;
-  padding: 40px 30px;
+  padding: 40px 0px;
   /* max-width: 600px; */
   width: 90%;
   /* max-height: 90vh; */
