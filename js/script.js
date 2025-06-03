@@ -1,3 +1,34 @@
+let scrollY = 0;
+
+function disableScroll() {
+  scrollY = window.scrollY;
+
+  // ✅ 스크롤바 너비 계산 (사라지는 너비만큼 padding)
+  const scrollbarWidth =
+    window.innerWidth - document.documentElement.clientWidth;
+  document.body.style.paddingRight = `${scrollbarWidth}px`;
+
+  // ✅ 스크롤 고정
+  document.body.style.position = "fixed";
+  document.body.style.top = `-${scrollY}px`;
+  document.body.style.left = "0";
+  document.body.style.right = "0";
+  document.body.style.overflow = "hidden";
+  document.body.style.width = "100%";
+}
+
+function enableScroll() {
+  document.body.style.position = "";
+  document.body.style.top = "";
+  document.body.style.left = "";
+  document.body.style.right = "";
+  document.body.style.overflow = "";
+  document.body.style.width = "";
+  document.body.style.paddingRight = ""; // ✅ 패딩 되돌리기
+
+  window.scrollTo(0, scrollY);
+}
+
 window.addEventListener("load", () => {
   // // isotope 필터링
   // const grid = new Isotope("main", {
@@ -133,6 +164,7 @@ window.addEventListener("load", () => {
       modal.querySelector("h1").innerText = title;
       modal.querySelector("p").innerText = description;
       modal.classList.add("active");
+      disableScroll();
     });
   });
 
@@ -140,6 +172,7 @@ window.addEventListener("load", () => {
   closeBtn.addEventListener("click", () => {
     modal.classList.remove("active");
     modal.querySelector(".modal-media").innerHTML = ""; // iframe 제거
+    enableScroll();
   });
 
   // ✅ YouTube 영상 썸네일 클릭 시 iframe으로 전환
